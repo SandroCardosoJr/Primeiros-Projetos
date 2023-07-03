@@ -1,0 +1,266 @@
+/* Geral */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    text-align: center;
+}
+
+/* Apresentação do projeto */
+#about-conteiner {
+    flex: 1,4;
+    padding: 2rem 4rem;
+}
+
+#brand {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    margin-left: 200px;
+    color: #b10101;
+}
+
+#brand img {
+    margin-right: 0.6rem;
+}
+
+#exclusive {
+    text-transform: uppercase;
+    color: #b10101;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+#about-conteiner h2 {
+    font-size: 2.4rem;
+    max-width: 720px;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    color: #b10101;
+}
+
+#date {
+    text-transform: uppercase;
+    color: #b10101;
+    margin-bottom: 1rem;
+}
+
+#description {
+    max-width: 720px;
+    margin-bottom: 1rem;
+    line-height: 1.4rem;
+    color: #b10101;
+}
+
+#about-conteiner h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    margin-left: -20px;
+    color: #b10101;
+}
+
+#idolos-do-time {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-left: 65px;
+}
+
+.idolos-card {
+    border: 2px solid #a38c3f;
+    border-radius: 10%;
+    background-color: #b10101;
+    padding: 1rem;
+    width: 180px;
+    height: 235px;
+    text-align: center;
+}
+
+.idolos-card img {
+    width: 130px;
+    border-radius: 80%;
+    height: 140px;
+    margin-bottom: 1rem;
+    border: 2px solid #a38c3f;
+}
+
+.idolos-card .idolo-name {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    color: #000000;
+    text-shadow: -1px -1px 0px #a38c3f;
+}
+
+.idolos-card .idolo-role {
+    color: #a38c3f;
+    font-size: 0.9rem;
+    text-shadow: -1px -1px 0px #000;
+}
+
+/* Formulário */
+#form-conteiner {
+    flex: 1;
+    background-image: url("../img/torcida-flamengo-1.jpg");
+    background-size: cover;
+    color: #000000;
+    font-weight: bold;
+    font-size: larger;
+    text-shadow: -1.5px -1.5px #ffffff;
+}
+
+#form-conteiner p {
+    color: white;
+    font-size: large;
+    text-shadow: -1.5px -1.5px #b10101;
+}
+
+#form-inner {
+    margin: 3rem;
+    padding: 2rem;
+    border: 3px solid #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-inner h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-size: xx-large;
+}
+
+#form-inner p {
+    margin-bottom: 1rem;
+}
+
+#register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#name-conteiner {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#register-form input {
+    padding: 0.4rem 0.3rem;
+    border: none;
+    border-radius: 3px;
+}
+
+#email {
+    min-width: 100%;
+}
+
+#register-form input[type="submit"] {
+    background-color: #b10101;
+    color: #ffffff;
+    border: 1.5px solid transparent;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+    text-shadow: -1px -1px #000000;
+}
+
+#register-form input[type="submit"]:hover {
+    background-color: #000;
+    color: #ee1616;
+    text-shadow: -0.5px -0.5px #fff;
+}
+
+#benefits {
+    text-align: left;
+    align-self: start;
+}
+
+#benefits h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+#benefits ul {
+    list-style: none;
+}
+
+#benefits li {
+    margin-bottom: 1rem;
+}
+
+/* Responsivo */
+
+@media (max-width:450px) {
+    body {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #brand {
+        margin-left: 60px;
+    }
+
+    #about-conteiner {
+        padding: 2rem;
+        padding-bottom: 0;
+    }
+
+    #about-conteiner h2 {
+        font-size: 2rem;
+    }
+
+    #exclusive, 
+    #date {
+        font-size: 1.4rem;
+    }
+    
+    #description {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+h4 {
+    text-align: center;
+}    
+
+#idolos-do-time {
+    flex-direction: column;
+    margin-left: -10px;
+}
+
+.idolos-card {
+    width: 100%;
+    padding: 2rem;
+    height: auto;
+}
+
+.idolos-card img {
+    width: 150px;
+    height: auto;
+}
+
+.idolos-card .impera {
+    height: 190px;
+}
+
+.idolos-card .idolo-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.idolos-card .idolo-role {
+    font-size: 1.4rem;
+}
+    
+}
